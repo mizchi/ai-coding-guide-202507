@@ -7,7 +7,7 @@ AI アシスタント（Claude Code / Cline）と効果的に協働する方法�
 速習 Claude Code を読むことを前提
 
 https://zenn.dev/mizchi/articles/claude-code-cheatsheet
-
+も
 ## プロジェクト構成
 
 ```

@@ -1,0 +1,19 @@
+{
+  "name": "00-setup",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.0.12",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "todo-cli",
+  "version": "1.0.0",
+  "description": "A simple TODO CLI application with SQLite storage",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "prisma generate && tsc",
+    "start": "npm run build && node dist/index.js",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "lint": "eslint src tests --ext .ts",
+    "lint:fix": "eslint src tests --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "check": "npm run format:check && npm run lint && npm run test"
+  },
+  "bin": {
+    "todo": "./dist/index.js"
+  },
+  "keywords": ["todo", "cli", "sqlite"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "@prisma/client": "^5.0.0"
+  },
+  "devDependencies": {
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^24.0.0",
+    "prisma": "^5.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "prettier": "^3.0.0"
+  }
+}
