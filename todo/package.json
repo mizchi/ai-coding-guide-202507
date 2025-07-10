@@ -1,0 +1,29 @@
+{
+  "name": "todo-cli",
+  "version": "1.0.0",
+  "description": "A simple TODO CLI application with SQLite storage",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage"
+  },
+  "bin": {
+    "todo": "./dist/index.js"
+  },
+  "keywords": ["todo", "cli", "sqlite"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^24.0.0"
+  }
+}
